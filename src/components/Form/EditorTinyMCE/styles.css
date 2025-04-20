@@ -1,0 +1,21 @@
+.tox-edit-area{
+    min-height: 500px !important;
+}
+.tox-tinymce {
+    border: none !important;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    visibility: inherit !important;
+    outline: none;
+}
+.tox-statusbar {
+    display: none !important; /* Ẩn thanh trạng thái */
+}
+
+.no-border .tox .tox-edit-area::before {
+    border: none !important; /* Tắt border */
+}

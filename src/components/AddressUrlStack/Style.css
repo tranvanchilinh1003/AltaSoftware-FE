@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.smalltext {
+  color: var(--grey-text);
+  font-size: 18px;
+}
+.bigtext {
+  color: var(--black-text);
+  font-size: 38px;
+  font-weight: bold;
+}

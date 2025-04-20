@@ -1,0 +1,22 @@
+.joinClass-container {
+  display: flex;
+  height: 100%;
+
+  .student-list {
+    flex: 1;
+  }
+
+  .joinClass-conten {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shared-screen {
+    flex: 1;
+  }
+
+  .class-share {
+    flex: 0 0 80px;
+  }
+}

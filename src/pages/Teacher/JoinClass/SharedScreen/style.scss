@@ -1,0 +1,40 @@
+.shared-screen {
+  flex: 1;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  .screen-content {
+    position: relative;
+    flex: 1;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .controls {
+      position: absolute;
+      bottom: 10px;
+      left: 10;
+      display: flex;
+      gap: 10px;
+
+      button {
+        background: rgba(255, 255, 255, 0.8);
+        border: none;
+        padding: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .title {
+    color: white;
+    font-size: 14px;
+    margin-bottom: -10px;
+  }
+}

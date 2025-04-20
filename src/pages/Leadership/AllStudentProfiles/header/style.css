@@ -1,0 +1,57 @@
+.btn {
+  background-color: var(--background-gray);
+  padding: 10px 20px; /* Tăng padding để nút to hơn */
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: var(--font-size-Source-Sans-Pro-2);
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #a6a6a6;
+  min-width: 130px; /* Đặt chiều rộng tối thiểu */
+  font-size: 16px; /* Tăng kích thước chữ */
+}
+
+.btn:hover {
+  background-color: var(--grey-text);
+}
+
+.btn.active {
+  background-color: #373839;
+  color: var(--while-text);
+}
+
+.trash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+  height: 100%;
+}
+
+.trash-icon {
+  font-size: var(--line-height-Mulish-4);
+  width: 40px;
+}
+
+.add-btn {
+  background-color: var(--background-2);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: var(--font-size-Source-Sans-Pro-2);
+  text-align: center;
+  color: var(--while-text);
+}
+
+.export-btn {
+  border: 2px solid var(--background-2); /* Giữ lại viền */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: var(--font-size-Source-Sans-Pro-2);
+  text-align: center;
+  color: var(--black-text);
+}

@@ -1,0 +1,153 @@
+/* ✅ Tab List */
+.tab-list {
+    @apply inline-flex flex-nowrap px-2 py-2 list-none rounded-md bg-slate-100 gap-2;
+    font-family: var(--font-Mulish);
+}
+
+
+/* ✅ Tab Button */
+.tab-button-tab-component {
+    @apply flex items-center justify-center gap-2 px-1 text-sm font-medium transition-all rounded-lg cursor-pointer whitespace-nowrap;
+    font-family: var(--font-Mulish);
+}
+
+/* ✅ Active Tab Button */
+.tab-button-tab-component-active {
+    @apply font-bold bg-white shadow-md;
+}
+
+/* ✅ Variants */
+.variant-solid {
+    @apply bg-white;
+}
+
+.variant-solid-active {
+    @apply bg-[#37383a];
+}
+
+.variant-underlined {
+    @apply border-b-2 border-gray-300;
+}
+
+.variant-bordered {
+    @apply border border-red-500 rounded-lg;
+}
+
+.variant-light {
+    @apply bg-white;
+}
+
+.variant-charcoal {
+    @apply bg-[#37383a] text-white;
+}
+
+.variant-red {
+    @apply bg-red-500;
+}
+
+/* ✅ Colors */
+.color-default {
+    @apply text-gray-600;
+}
+
+.color-white {
+    @apply text-white;
+}
+
+.color-primary {
+    @apply text-blue-600;
+}
+
+.color-secondary {
+    @apply text-gray-500;
+}
+
+.color-success {
+    @apply text-green-600;
+}
+
+.color-warning {
+    @apply text-yellow-500;
+}
+
+.color-danger {
+    @apply text-red-600;
+}
+
+/* ✅ Radius */
+.radius-sm {
+    @apply rounded-sm;
+}
+
+.radius-md {
+    @apply rounded-md;
+}
+
+.radius-lg {
+    @apply rounded-lg;
+}
+
+.radius-xl {
+    @apply rounded-xl;
+}
+
+/* ✅ Tab Content */
+/* .tab-content {
+    @apply mt-2 p-4 bg-white ;
+  }
+  .tab-content.radius-sm {
+    @apply rounded-sm;
+  }
+  .tab-content.radius-md {
+    @apply rounded-md;
+  }
+  .tab-content.radius-lg {
+    @apply rounded-lg;
+  } */
+
+/* ✅ Badge */
+.tab-badge {
+    @apply bg-[#dc5c0d] text-white text-xs px-2 py-1 rounded-full flex-shrink-0;
+}
+
+/* ✅ Sizes */
+.size-sm {
+    @apply text-xs h-8 px-3;
+}
+
+.size-md {
+    @apply text-sm h-10 px-4;
+}
+
+.size-lg {
+    @apply text-base h-12 px-5;
+}
+
+.size-xl {
+    @apply text-lg h-14 px-6;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 640px) {
+    .tab-button-tab-component {
+        @apply text-xs p-4 h-4;
+    }
+}
+
+@media (min-width: 768px) {
+    .tab-button-tab-component {
+        @apply text-sm p-4 h-4;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tab-button-tab-component {
+        @apply text-base p-4 h-6;
+    }
+}
+
+@media (min-width: 1280px) {
+    .tab-button-tab-component {
+        @apply text-lg p-5 h-8;
+    }
+}

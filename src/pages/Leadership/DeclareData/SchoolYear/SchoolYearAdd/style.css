@@ -1,0 +1,23 @@
+.icon-fiminus {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: var(--background-gray);
+}
+.semester-input {
+  padding: 8px 16px;
+  gap: 13px;
+
+  height: 40px;
+  border: 1px solid var(--background-gray);
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.calendar-popup .open {
+  background-color: var(--background-white);
+}
+
+.calendar-input-container {
+  position: relative;
+}

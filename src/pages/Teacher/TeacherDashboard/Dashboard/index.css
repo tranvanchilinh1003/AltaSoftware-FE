@@ -1,0 +1,27 @@
+
+
+/* css lưới */
+.custom-css-gird{
+    @apply flex flex-col items-center p-2 shadow-md rounded-xl bg-gradient-to-l;
+    height: 100px;
+}
+
+/* title */
+.custom-text-title{
+font-size: 14px;
+color: white;
+}
+
+/* style data */
+.custom-text-data{
+    color: white;
+    font-size: 44px
+}
+
+/* hr */
+.custom-line{
+    @apply flex text-sm justify-between border-b  pb-2 ;
+}
+
+
+

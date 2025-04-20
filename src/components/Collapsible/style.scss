@@ -1,0 +1,65 @@
+.collapsible-container {
+  width: 100%;
+}
+
+.collapsible-button {
+  background: var(--background-while);
+  color: #000;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.collapsible-header {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Khoảng cách giữa icon và tiêu đề */
+  width: 100%;
+}
+
+.icon {
+  width: 18px;
+  height: 14px;
+  padding-right: 5px;
+  margin-right: 10px;
+}
+
+.title-text {
+  font-size: var(--font-size-Mulish-4);
+  font-weight: var(--weight-Source-Sans-Pro-2);
+  font-family: var(--font-Mulish);
+  line-height: var(--line-height-Mulish-4);
+}
+
+.collapsible-button.open {
+  background: linear-gradient(to right, var(--background-2), var(--background-1));
+  color: var(--while-text);
+}
+
+/* Hiệu ứng cho collapsible content */
+.collapsible-content {
+  height: 0; /* Ban đầu ẩn collapsible */
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
+  transition: height 0.5s ease-out, opacity 0.5s ease-out; /* Thêm hiệu ứng mượt mà */
+}
+
+.collapsible-content p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Khi mở collapsible */
+.collapsible-content.show {
+  height: auto;
+  opacity: 1;
+  padding: 10px 15px; /* Thêm padding khi mở */
+  transition: height 0.5s ease-in, opacity 0.5s ease-in; /* Hiệu ứng mở */
+}

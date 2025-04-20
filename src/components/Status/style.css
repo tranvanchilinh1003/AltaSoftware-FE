@@ -1,0 +1,90 @@
+:root {
+    --status-studying-color: theme(colors.background-green);
+    --status-dropped-color: theme(colors.red-status);
+    --status-graduated-color: theme(colors.blue-status);
+    --status-classTransferred-color: theme(colors.orange-text);
+    --status-schoolTransferred-color: theme(colors.black-text);
+}
+
+/* Container chính của trạng thái */
+.status-container {
+    display: inline-flex;
+    align-items: center;
+    /* Canh giữa theo chiều dọc */
+    justify-content: center;
+    /* Canh giữa theo chiều ngang nếu cần */
+    padding: 16px;
+    /* Chỉ thêm padding trái và phải */
+    border-radius: 4px;
+    /* Bo tròn góc */
+    font-size: 14px;
+    /* Kích thước chữ */
+    font-weight: 500;
+    /* Độ đậm của chữ */
+    height: 32px;
+    /* Chiều cao cố định */
+    border: 1.5px solid;
+    /* Viền */
+    gap: 8px;
+    /* Khoảng cách giữa dot và chữ */
+}
+
+/* Dot trạng thái */
+.status-dot {
+    align-items: center;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    /* Hình tròn */
+}
+
+/* Các trạng thái cụ thể */
+/* Đang theo học */
+.status-container.studying {
+    border-color: var(--status-studying-color);
+    color: var(--status-studying-color);
+}
+
+.status-dot.studying {
+    background-color: var(--status-studying-color);
+}
+
+/* Đã thôi học */
+.status-container.dropped {
+    border-color: var(--status-dropped-color);
+    color: var(--status-dropped-color);
+}
+
+.status-dot.dropped {
+    background-color: var(--status-dropped-color);
+}
+
+/* Đã tốt nghiệp */
+.status-container.graduated {
+    border-color: var(--status-graduated-color);
+    color: var(--status-graduated-color);
+}
+
+.status-dot.graduated {
+    background-color: var(--status-graduated-color);
+}
+
+/* Đã chuyển lớp */
+.status-container.classTransferred {
+    border-color: var(--status-classTransferred-color);
+    color: var(--status-classTransferred-color);
+}
+
+.status-dot.classTransferred {
+    background-color: var(--status-classTransferred-color);
+}
+
+/* Đã chuyển trường */
+.status-container.schoolTransferred {
+    border-color: var(--status-schoolTransferred-color);
+    color: var(--status-schoolTransferred-color);
+}
+
+.status-dot.schoolTransferred {
+    background-color: var(--status-schoolTransferred-color);
+}

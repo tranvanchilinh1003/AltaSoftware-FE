@@ -1,0 +1,6 @@
+/* TextBlock/style.css */
+
+.text-block {
+  @apply text-gray-800 text-sm  italic font-normal break-words;
+  font-family: var(--font-Mulish);
+}

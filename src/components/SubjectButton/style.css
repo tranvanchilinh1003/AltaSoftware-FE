@@ -1,0 +1,71 @@
+.subject-button {
+  @apply z-0 relative inline-flex items-center justify-center box-border
+   appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased
+   overflow-hidden outline-none rounded-full transition-all motion-reduce:transition-none;
+}
+
+.subject-button.small {
+  @apply text-sm leading-4 px-2 py-1 w-auto h-auto gap-x-1.5;
+}
+
+.subject-button.medium {
+  @apply text-base leading-5 px-2 py-2 w-auto h-auto gap-x-1.5;
+}
+
+.subject-button.large {
+  @apply text-lg leading-6 px-2 py-3 w-auto h-auto gap-x-1.5;
+}
+
+.subject-button.extra-large {
+  @apply text-base leading-5 gap-1.5 px-4 py-4 w-auto h-auto gap-x-1.5;
+}
+
+.subject-button .title {
+  @apply font-normal leading-5;
+  font-family: var(--font-Mulish);
+  font-weight: var(--weight-Source-Sans-Pro-3);
+}
+
+.group {
+  position: relative;
+  z-index: 0;
+}
+
+.subject-button[data-pressed='true'] {
+  transform: scale(0.97);
+}
+
+.subject-button[data-focus-visible='true'] {
+  z-index: 10;
+  outline: 2px solid var(--tw-outline-focus);
+  outline-offset: 2px;
+}
+
+.subject-button svg {
+  max-width: theme(spacing.8);
+}
+
+.subject-button.blue {
+  background-color: var(--blue-status);
+  color: var(--while-text);
+}
+.subject-button.gray {
+  @apply bg-[#C5C5C5];
+  color: var(--while-text);
+}
+
+.subject-button.white-text {
+  color: var(--while-text);
+}
+
+.subject-button.black-text {
+  color: var(--black-text);
+}
+
+.subject-button.disabled {
+  @apply bg-gray-500 cursor-not-allowed;
+}
+
+.subject-button[data-hover='true'] {
+  @apply opacity-75;
+}

@@ -1,0 +1,35 @@
+.container {
+    border-radius: 8px;
+}
+  
+table {
+    border-collapse: collapse;
+}
+  
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+  
+.action-btn {
+    background: none;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: orange;
+}
+  
+.pagination-btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: white;
+}
+  
+.pagination-btn:hover, .pagination-btn.active {
+    background-color: orange;
+    color: white;
+}
+  

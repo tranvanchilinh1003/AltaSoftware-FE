@@ -1,0 +1,42 @@
+.container {
+  --orange-text: #ff7506; /* Màu cam */
+  --background-orange-1: #ffcc80; /* Màu nền cam nhạt */
+  --while-text: #ffffff; /* Màu chữ trắng */
+  text-align: center;
+  padding: 20px;
+  width: 200px;
+}
+
+.card {
+  background-color: var(--orange-text);
+  border: 2px solid var(--border-color); /* Thêm viền cho card */
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 122px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-2 {
+  background-color: var(--background-orange-1);
+  border: 2px solid var(--border-color); /* Thêm viền cho card-2 */
+  width: 85px;
+  border-radius: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--while-text);
+}
+
+.time {
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--while-text);
+}

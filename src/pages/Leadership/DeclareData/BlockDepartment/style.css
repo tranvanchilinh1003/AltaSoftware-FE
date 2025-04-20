@@ -1,0 +1,340 @@
+:root {
+  --color-orange: theme(colors.background-orange-1);
+  --text-white: theme(colors.while-text);
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal container */
+.modal-container {
+  width: 884px;
+  background: var(--background-while);
+  border-radius: 12px;
+  padding: 24px 64px 40px 64px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.modal-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: var(--black-text);
+}
+
+/* Form group */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Căn label và input trên cùng một hàng */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Điều chỉnh độ rộng cho label và input */
+.label {
+  width: 150px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--black-text);
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.input-50 {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  /* width: 40%; */
+}
+
+.select-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  padding-right: 20px;
+}
+
+.select-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select-container::after {
+  content: '';
+  background: url('../../../../assets/icons/Vector.png') no-repeat center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+}
+
+/* Select dropdown */
+.input select {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Footer buttons */
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.class-list-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.class-list-title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.close-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.class-list-wrapper {
+  padding: 0.75rem;
+  overflow: hidden;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.class-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: block;
+}
+
+.class-list-table thead {
+  display: block;
+  background: var(--color-orange);
+  color: var(--text-white);
+  position: sticky;
+  top: 0;
+}
+
+.class-list-table tbody {
+  display: block;
+  max-height: 300px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.class-list-wrapper::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.class-list-wrapper::-webkit-scrollbar-thumb {
+  background: var(--color-orange);
+  border-radius: 0.25rem;
+}
+
+.class-list-wrapper::-webkit-scrollbar-track {
+  background: var(--text-white);
+}
+
+.class-list-table tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.class-list-table td {
+  padding: 0.75rem;
+  vertical-align: middle;
+}
+
+.class-list-row {
+  display: table-row;
+  height: 3rem;
+  transition: background 0.3s;
+}
+
+.class-list-row td {
+  height: 3rem;
+}
+
+.class-list-row {
+  transition: background 0.3s;
+  padding: 0.75rem 0;
+}
+
+.class-list-row:nth-child(even) {
+  background-color: #ededed;
+}
+
+.class-list-row:nth-child(odd) {
+  background-color: white;
+}
+
+.selected {
+  background: #ffebcc !important;
+}
+
+.table-header {
+  background: var(--color-orange);
+  color: var(--text-white);
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.table-header .unfold-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.table-header .unfold-wrapper img {
+  margin-left: 5px;
+}
+
+.checkbox-header {
+  padding-left: 0.75rem;
+  padding-top: 0.75rem;
+  text-align: center;
+}
+
+.checkbox-header img {
+  padding: 0 0 0.5rem 0;
+}
+
+.class-list-footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.delete-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.delete-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 2.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--color-orange);
+  font-weight: bold;
+}
+
+@media (max-width: 48rem) {
+  .class-list-container {
+    width: 90%;
+  }
+
+  .class-list-title {
+    font-size: 1.125rem;
+  }
+
+  .table-header,
+  .class-list-row td {
+    padding: 0.625rem;
+  }
+
+  .class-list-table td {
+    font-size: 0.875rem;
+  }
+
+  .close-btn {
+    top: 0.5rem;
+    right: 0.75rem;
+  }
+
+  .class-list-wrapper {
+    padding: 0.5rem;
+  }
+
+  .class-list-footer {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .class-list-title {
+    font-size: 1.125rem;
+    padding-right: 35px;
+  }
+
+  .close-btn {
+    top: 0.5rem;
+    right: 1rem;
+  }
+}

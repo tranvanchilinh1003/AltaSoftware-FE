@@ -1,0 +1,19 @@
+.custom-dropdown{
+    border: none !important;
+    background: #F2F2F2;
+    height: 40px;
+}
+
+.custom-dropdown span{
+    font-style: italic;;
+}
+
+svg path {
+  stroke: none !important;
+}
+
+.custom-input .ant-picker{
+  width: 450px;
+  border: none;
+    background: #F2F2F2;
+}

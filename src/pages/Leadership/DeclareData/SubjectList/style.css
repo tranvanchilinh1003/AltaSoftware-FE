@@ -1,0 +1,59 @@
+.br-gradient-right-or {
+  background: linear-gradient(to right, var(--background-2), var(--background-1));
+}
+
+.text-white-text {
+  color: var(--white-text);
+}
+
+.custom-checkbox {
+  width: 21px;
+  height: 21px;
+  border: 2px solid var(--background-blue-1);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+  background-color: white;
+}
+
+.custom-checkbox:checked {
+  background-color: rgb(52, 70, 235);
+  border: 2px solid var(--background-blue-1);
+}
+
+.custom-checkbox:indeterminate {
+  background-color: rgb(24, 10, 230);
+  border: 2px solid var(--background-blue-1);
+}
+
+.custom-checkbox:indeterminate::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-checkbox:checked::after {
+  content: '✔';
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.delete-btn img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.delete-btn.active img {
+  filter: invert(59%) sepia(95%) saturate(2111%) hue-rotate(2deg) brightness(106%) contrast(102%);
+}

@@ -1,0 +1,25 @@
+@import './../../styles/variables';
+
+.header-container-opstion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .header {
+    padding: 20px;
+    text-align: left;
+    height: 50px;
+
+    p {
+      font-size: $font-size-Mulish-1;
+      font-weight: $weight-Mulish;
+      color: $black-text;
+    }
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}

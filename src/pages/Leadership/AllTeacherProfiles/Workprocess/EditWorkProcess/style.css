@@ -1,0 +1,7 @@
+select:invalid {
+  font-style: italic;
+  color: gray;
+}
+.checkinput {
+  width: '700px';
+}

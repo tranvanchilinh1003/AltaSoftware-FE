@@ -1,0 +1,67 @@
+.modalOverlay {
+  @apply fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.modalWrapper {
+  @apply relative max-h-screen overflow-auto transform transition-all duration-300 flex flex-col justify-center items-center m-4;
+  max-width: 90vw;
+  max-height: 90vh;
+  animation: slideFadeIn 0.25s ease-out;
+}
+
+.modalContent {
+  @apply bg-white rounded-lg shadow-xl w-full flex flex-col;
+}
+
+/* HEADER */
+.modalHeader {
+  @apply flex items-center justify-between p-4 ;
+}
+
+/* BODY */
+.modalBody {
+  @apply p-4 flex-1 overflow-auto text-center;
+}
+
+/* FOOTER */
+.modalFooter {
+  @apply flex justify-center p-4 ;
+  gap: 10px;
+}
+
+/* Kích thước modal */
+.modalWrapper.size-extra-small { @apply max-w-xs; }
+.modalWrapper.size-small { @apply max-w-sm; }
+.modalWrapper.size-medium { @apply max-w-md; }
+.modalWrapper.size-large { @apply max-w-lg; }
+.modalWrapper.size-extra-large { @apply max-w-xl; }
+.modalWrapper.size-2x-large { @apply max-w-2xl; }
+.modalWrapper.size-3x-large { @apply max-w-3xl; }
+.modalWrapper.size-4x-large { @apply max-w-4xl; }
+.modalWrapper.size-5x-large { @apply max-w-5xl; }
+.modalWrapper.size-full-screen { @apply w-full h-full; }
+
+/* Vị trí hiển thị */
+.modalWrapper.position-top { @apply justify-start mt-8; }
+.modalWrapper.position-bottom { @apply justify-end mb-8; }
+.modalWrapper.position-center { @apply justify-center; }
+
+/* Hiệu ứng mở modal */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Giảm animation nếu người dùng muốn */
+@media (prefers-reduced-motion: reduce) {
+  .modalOverlay, .modalWrapper { animation: none; }
+}
+.text-left { text-align: left; }
+.text-center { text-align: center;  }
+.text-right { text-align: right; }

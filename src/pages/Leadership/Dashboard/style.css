@@ -1,0 +1,9 @@
+.card-student {
+    background: linear-gradient(to right, #56CCF2, #2F80ED);
+}
+.card-teacher {
+    background: linear-gradient(to right, #FF5400, #F17F21);
+}
+.card-class {
+    background: linear-gradient(to right, #2EACEE, #0016DA);
+}

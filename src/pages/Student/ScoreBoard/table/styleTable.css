@@ -1,0 +1,39 @@
+.TableStudentRetention-Header {
+  padding: 10px;
+}
+
+.header-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.TableStudentRetentions {
+  box-shadow: 4px 4px 25px 4px rgba(154, 202, 252, 0.5);
+  border-radius: 10px;
+  padding: 20px 20px 10px 20px;
+  width: 98%;
+}
+.TableStudentRetentionsBoder {
+  padding-bottom: 30px;
+}

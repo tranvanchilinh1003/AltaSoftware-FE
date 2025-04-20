@@ -1,0 +1,164 @@
+@import '../../../styles/tailwind.scss';
+
+.tab-dropdown-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+  padding: 20px 20px 20px 0px;
+}
+.group-dropdown {
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa các dropdown */
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.class-info-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--border-orange);
+  background-color: #fff9f4;
+  margin: 20px 20px 20px 0px;
+  border-radius: 16px;
+  padding: 50px;
+}
+
+.class-info-box {
+  width: 100%;
+  padding: 20px;
+}
+
+.title {
+  font-size: var(--font-size-Mulish-4);
+  font-weight: var(--weight-Source-Sans-Pro-2);
+  font-family: var(--font-Mulis);
+  line-height: var(--line-height-Mulish-4);
+  margin-bottom: 20px;
+  color: var(--orange-text);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-study-process {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-column {
+  width: 55%;
+}
+
+.info-description {
+  width: 45%;
+}
+
+p {
+  color: #333;
+  font-family: var(--font-Source-Sans-Pro);
+  font-size: var(--font-size-Source-Sans-Pro-1);
+  font-weight: var(--weight-Source-Sans-Pro-3);
+  padding-bottom: 16px;
+}
+
+strong {
+  font-family: var(--font-Source-Sans-Pro);
+  font-size: var(--font-size-Source-Sans-Pro-1);
+  line-height: var(--line-height-Source-Sans-Pro-2);
+  font-weight: var(--weight-Mulish);
+  padding-right: 16px;
+  color: #333;
+}
+
+.collapsible {
+  margin: 20px 20px 20px 0px;
+}
+
+.table-cell {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ddd;
+  }
+
+  &.border-l::after {
+    right: 30px;
+  }
+
+  &.border-r::after {
+    left: 30px;
+  }
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 999px;
+  padding: 8px;
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  color: #999;
+  width: 300px;
+  padding-left: 10px;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+  font-size: 18px;
+}
+
+.icon-search {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+.table {
+  border-collapse: separate;
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #b0b0b0 #f5f5f5;
+}
+
+/* Tùy chỉnh thanh cuộn trên Chrome, Edge và Safari */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f5f5f5; /* Màu nền của track */
+  border-radius: 10px; /* Bo tròn góc */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #b0b0b0; /* Màu của thanh cuộn */
+  border-radius: 10px; /* Bo tròn góc */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+.SwitchTag-StudyProcessContent {
+  width: 308px;
+}

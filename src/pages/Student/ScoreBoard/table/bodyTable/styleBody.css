@@ -1,0 +1,67 @@
+td {
+  vertical-align: middle;
+}
+
+.th-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.th-content {
+  color: var(--while-text);
+}
+
+.sort-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.student-table {
+  text-align: center;
+}
+
+.overflow-y-auto {
+  margin-right: 10px;
+}
+
+th:nth-child(3),
+.tbody tr td:nth-child(3),
+th:nth-child(9),
+.tbody tr td:nth-child(9) {
+  border-right: 2px solid #ff7506;
+}
+
+.tbody .student-table .text-left {
+  text-align: left;
+}
+
+.tbody .student-table td {
+  text-align: center;
+}
+
+.tbody .student-table .text-color {
+  font-weight: 700;
+}
+
+.student-table thead tr th .th-content {
+  text-align: center;
+}
+
+.student-table .thead,
+.student-table .tbody tr {
+  table-layout: fixed;
+}
+
+.tbody {
+  /* display: block; */
+  max-height: 400px;
+  overflow-y: auto;
+}
+.student-table {
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: collapse;
+}

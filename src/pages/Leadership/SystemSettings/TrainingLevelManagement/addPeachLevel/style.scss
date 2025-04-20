@@ -1,0 +1,116 @@
+@import './../../../../../styles/variables';
+.education-form-add {
+  width: 95%;
+  margin: auto;
+  background: $background-while;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .form-group-education-add {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding: 10px;
+
+    label {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .TDDT {
+      width: 100%;
+      padding: 10px;
+      margin-left: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      background-color: #f2f2f2;
+    }
+    .HTDT {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      background-color: #f2f2f2;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      margin-left: 70px;
+    }
+
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 150px;
+
+      input {
+        width: 20px;
+        height: 20px;
+        accent-color: #0b80ec;
+      }
+    }
+
+    .extra-fields {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+      align-items: center;
+      input {
+        width: 130px;
+        text-align: center;
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 8px;
+        background-color: #f2f2f2;
+      }
+    }
+  }
+
+  p.error-text {
+    color: red;
+    font-size: 14px;
+    margin: 4px 0 0 170px;
+  }
+  .box-Text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 6px;
+    margin-left: 210px;
+    max-width: 500px;
+
+    p {
+      font-family: $font-Source-Sans-Pro;
+      font-size: $font-size-Source-Sans-Pro-1;
+      line-height: 1;
+      font-style: italic;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+}

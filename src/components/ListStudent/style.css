@@ -1,0 +1,64 @@
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Ẩn thanh cuộn trên IE, Edge */
+  scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+}
+
+.threeVertical {
+  width: 25px;
+  height: 25px;
+}
+
+.micOrg {
+  width: 20px;
+  height: 25px;
+}
+
+.micWhite {
+  width: 20px;
+  height: 25px;
+}
+
+.titleStudent {
+  font-size: var(--font-size-Mulish-4);
+  font-weight: var(--line-height-Source-Sans-Pro-1);
+}
+
+.bg-name {
+  background: rgba(0, 0, 0, 0.533);
+}
+
+.dropdown1 {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  position: absolute;
+  top: 5px;
+  left: 100%;
+  width: 275px;
+  z-index: 1000;
+}
+
+.dropdown2 {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  position: absolute;
+  top: 25px;
+  left: -8%;
+  width: 275px;
+  z-index: 1000;
+}
+
+.addStudent {
+  bottom: 10%;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 10%;
+}

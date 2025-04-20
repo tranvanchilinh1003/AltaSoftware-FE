@@ -1,0 +1,22 @@
+.school-information .modalOverlay .modalWrapper .modalContent .modalHeader .title-container{
+    display: flex;
+    justify-content: center;
+}
+.school-information .modalOverlay .modalWrapper .modalContent .modalBody{
+    text-align: left;
+}
+
+.edit-information .dropdown .dropdown.medium{
+    width: 66.666667%;
+}
+.calendar .calendar-container{
+    width: 66.666667%;
+}
+.calendar .calendar-container .calendar-input-container{
+    width: 100%;
+    border: 1px solid rgb(204, 204, 204);
+}
+.calendar .calendar-container .calendar-input-container input{
+    width: 100%;
+    border-right: 1px solid rgb(204, 204, 204);
+}

@@ -1,0 +1,311 @@
+Overlay làm mờ nền .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+/* Form container */
+.form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  width: 884px;
+  z-index: 20;
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 40px 60px;
+  border-radius: 16px;
+  width: 884px;
+  margin: auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #373839;
+  margin-bottom: 20px;
+}
+
+/* Căn chỉnh label bên trái và input bên phải */
+.row {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.title2 {
+  flex: 1;
+  color: #373839;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+  padding-right: 10px;
+  max-width: 180px;
+}
+
+.title2-note {
+  flex: 1;
+  color: #373839;
+  font-weight: bold;
+  font-size: 16px;
+  padding-right: 10px;
+  max-width: 180px;
+  margin-top: -90px;
+}
+
+.row .input-main,
+.row textarea,
+.row .file-upload-container,
+.file-note {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 585px;
+}
+
+.file-note {
+  font-size: 16px;
+  color: #555;
+  font-style: italic;
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 190px;
+}
+
+.input-main {
+  position: relative;
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 585px;
+}
+
+/* Ẩn icon mặc định của input date */
+.visible-input::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.visible-input::-moz-calendar-picker-indicator {
+  display: none;
+}
+
+.visible-input::-ms-clear,
+.visible-input::-ms-reveal {
+  display: none;
+}
+
+/* Điều chỉnh giao diện input */
+.input-main {
+  position: relative;
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Ẩn input date nhưng vẫn chọn được */
+.hidden-input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+/* Hiển thị ngày đã chọn */
+.date-display {
+  flex: 1;
+  font-size: 16px;
+  font-style: italic;
+  color: #aaa;
+}
+
+.date-display.has-value {
+  color: #292b2e;
+  font-style: normal;
+}
+
+/* Icon lịch */
+.calendar-icon {
+  width: 24px;
+  height: 24px;
+  background: url('../../../../assets/icons/u_calendar-alt.png') no-repeat center;
+  background-size: contain;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.date-display {
+  flex: 1;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.date-display.has-value {
+  color: #292b2e;
+}
+
+.calendar-icon {
+  width: 20px;
+  height: 20px;
+  background: url('../../../../assets/icons/u_calendar-alt.png') no-repeat center;
+  background-size: contain;
+  margin-left: 10px;
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  background: #f2f2f2;
+  resize: none;
+  height: 120px;
+  width: 100%;
+  font-size: 14px;
+}
+
+textarea::placeholder,
+input::placeholder {
+  font-style: italic;
+}
+
+.note-textarea {
+  font-size: 16px;
+  font-style: normal;
+}
+
+.required {
+  color: red;
+}
+
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-input-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.file-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #efefef;
+  width: 100%;
+}
+
+.file-icon {
+  width: 16px;
+  height: 16px;
+  background: url('../../../../assets/icons/u_paperclip.png') no-repeat center;
+  background-size: contain;
+  margin-right: 6px;
+  /* Tạo khoảng cách với divider */
+}
+
+.file-divider {
+  width: 1px;
+  height: 24px;
+  background-color: #c9c4c0;
+  margin-right: 6px;
+  /* Tạo khoảng cách với input */
+}
+
+.file-input {
+  flex: 1;
+  /* Để input mở rộng đúng kích thước */
+  outline: none;
+  padding: 5px;
+  background-color: #efefef;
+}
+
+.file-hidden {
+  display: none;
+}
+
+.row label .file-button {
+  text-align: center;
+}
+
+.file-button {
+  background: #ffd8b8;
+  color: #373839;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: solid 1px #ff7506;
+  font-size: 16px;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cancel-btn,
+.submit-btn {
+  padding: 10px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  width: 160px;
+}
+
+.cancel-btn {
+  background: #f2f2f2;
+  color: #333;
+}
+
+.submit-btn {
+  background: #c9c4c0;
+  color: white;
+}
+
+.submit-btn.disabled {
+  background: #c9c4c0;
+  cursor: not-allowed;
+}
+
+.submit-btn.active {
+  background-color: #ff7506;
+  cursor: pointer;
+}

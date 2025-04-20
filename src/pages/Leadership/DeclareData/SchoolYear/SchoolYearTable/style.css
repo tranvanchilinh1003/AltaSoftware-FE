@@ -1,0 +1,20 @@
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Độ rộng scroll */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Màu nền scroll */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  
+   /* Màu thanh kéo */
+   background: #d1d5db;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--background-gray); /*  hover */
+}

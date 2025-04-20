@@ -1,0 +1,168 @@
+:root {
+    --primary: #ff6b00;
+    --white: #ffffff;
+    --gray: #f5f5f5;
+}
+
+.container {
+
+    width: 100%;
+    background-color: var(--white);
+    padding: 24px 64px 20px 64px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-bottom: 37px;
+}
+
+
+.addButton:hover {
+    background-color: var(--primary);
+}
+
+
+.table {
+    width: 100%;
+    min-height: 300px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: auto;
+
+}
+
+.table thead {
+    background-color: var(--primary);
+    color: white;
+    text-align: left;
+}
+
+.table thead th {
+    padding: 8px 36px;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+
+
+.title {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+
+
+.table tbody tr:nth-child(even) {
+    background-color: var(--gray);
+    border: 1px solid var(--gray);
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+}
+
+.table tbody tr td {
+    padding: 9px 36px;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.actionButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 16px
+}
+
+.actionButton svg {
+    color: var(--primary);
+}
+
+
+
+/* Phân trang */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.pageButtons {
+    display: flex;
+    gap: 8px;
+}
+
+.pageButton {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+
+
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f5f7fa;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.searchWrapper svg {
+    width: 18px;
+    height: 18px;
+    color: #6c757d;
+    margin-right: 8px;
+    flex-shrink: 0;
+
+}
+
+.searchIcon {
+    width: 16px;
+    height: 16px;
+    fill: #b0b0b0;
+    margin-right: 8px;
+}
+
+.searchInput {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    font-style: italic;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.block-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}

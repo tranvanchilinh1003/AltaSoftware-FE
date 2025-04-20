@@ -1,0 +1,32 @@
+
+.checkbox-container {
+  @apply flex items-center cursor-pointer select-none relative text-lg my-2;
+}
+
+.checkbox-container input[type="checkbox"] {
+  @apply absolute opacity-0 w-0 h-0 cursor-pointer;
+}
+
+.checkmark {
+  @apply relative flex justify-center items-center w-5 h-5 bg-white rounded transition-colors;
+}
+
+.checkbox-container input:checked + .checkmark {
+  @apply bg-blue-600;
+}
+
+.checkmark::after {
+  content: "";
+  @apply absolute hidden w-1.5 h-3 border-white border-r-2 border-b-2 rotate-45;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.checkbox-container input:checked + .checkmark::after {
+  @apply block;
+}
+
+.label-text {
+  @apply ml-3 text-gray-800 transition-colors;
+}

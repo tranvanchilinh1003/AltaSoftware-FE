@@ -1,0 +1,44 @@
+@import './../../../../styles/variables';
+
+.header-container-opstion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .header {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      font-size: $font-size-Mulish-1;
+    }
+
+    .inactive {
+      color: $grey-text;
+      font-weight: $weight-Source-Sans-Pro-3;
+      font-size: $font-size-Mulish-4;
+    }
+
+    .separator {
+      color: $orange-text;
+      margin: 0 30px;
+      font-weight: bold;
+      font-size: $font-size-Mulish-4;
+    }
+
+    .active {
+      font-weight: $weight-Mulish;
+      color: $black-text;
+    }
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}

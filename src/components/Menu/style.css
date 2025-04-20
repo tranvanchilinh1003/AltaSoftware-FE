@@ -1,0 +1,21 @@
+.icon.active {
+  position: relative;
+}
+
+.icon.active::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+}
+.custom-orange-filter {
+  filter: invert(59%) sepia(95%) saturate(2111%) hue-rotate(2deg) brightness(106%) contrast(102%);
+}
+.custom-black-filter {
+  filter: brightness(0) invert(0);
+}

@@ -1,0 +1,12 @@
+.clickable-icon {
+  white-space: nowrap; /* Giữ chữ trên một hàng */
+  display: inline-flex; /* Đảm bảo biểu tượng và chữ trên cùng một hàng */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa icon và text */
+}
+
+
+
+.clickable-icon-img {
+  @apply rounded-full object-cover flex-shrink-0;
+}

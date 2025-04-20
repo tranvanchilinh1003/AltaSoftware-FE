@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer {
+  flex: 2;
+  width: 100%;
+  background-color: grey;
+}
+

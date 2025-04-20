@@ -1,0 +1,61 @@
+/* style.css */
+
+/* Header container */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  height: 3rem;
+}
+
+/* User section */
+.header .user-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* User avatar */
+.header .user-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* User name */
+.header .user-name {
+  color: var(--orange-text);
+  font-weight: bold;
+}
+
+/* Divider line */
+.header .divider {
+  border-left: 2px solid #823b00;
+  height: 1.5rem;
+}
+
+/* Buttons */
+/* .header .logout-button, */
+.header .login-button,
+.header .register-button {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.header .logout-button {
+  color: var(--grey-text);
+  font-weight: bold;
+}
+
+.header .login-button,
+.header .register-button {
+  color: var(--orange-text);
+  font-weight: bold;
+}
+
+.header .login-button:hover,
+.header .register-button:hover {
+  color: var(--orange-text);
+}

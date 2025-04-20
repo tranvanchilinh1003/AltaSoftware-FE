@@ -1,0 +1,57 @@
+.volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  border-radius: 5px;
+  background: #f8f5f2; /* Màu nền trắng của thanh */
+  box-shadow: inset 0 0 5px #ddd;
+  width: 100%;
+}
+
+.volume-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #823b00; /* Màu nền trắng */
+  box-shadow: inset 0 0 5px #ddd;
+}
+
+.volume-slider::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #f8f5f2;
+  box-shadow: inset 0 0 5px #ddd;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white; /* Nút màu trắng */
+  border: 2px solid #ddd;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: -5px; /* Giúp nút căn giữa với thanh */
+}
+
+.volume-slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #ddd;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tạo màu cho phần đã đi qua */
+.volume-slider::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #f8f5f2 var(--progress), #823b00 var(--progress));
+}
+
+.volume-slider::-moz-range-progress {
+  background: #823b00;
+  height: 10px;
+  border-radius: 5px;
+}
